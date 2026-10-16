@@ -8,15 +8,17 @@
 # what jobs are executed in CI.
 
 name: CI
+
 on:
-  push:
-    branches:
-      - automation/bors/auto
-      - automation/bors/try
-      - automation/bors/try-perf
-  pull_request:
-    branches:
-      - "**"
+  workflow_dispatch:
+#  push:
+#    branches:
+#      - automation/bors/auto
+#      - automation/bors/try
+#      - automation/bors/try-perf
+#  pull_request:
+#    branches:
+#      - "**"
 
 permissions:
   contents: read
