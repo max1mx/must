@@ -16,9 +16,9 @@ name: GHCR image mirroring
 
 on:
   workflow_dispatch:
-  schedule:
-    # Run daily at midnight UTC
-    - cron: '0 0 * * *'
+#  schedule:
+#    # Run daily at midnight UTC
+#    - cron: '0 0 * * *'
 
 jobs:
   mirror:
